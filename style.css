@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2%;
+}
+
+/* Grid Container houses each row which houses each box(pixel) */
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+}
+
+/* row set to flex so that it's all laid inline */
+.row {
+    display: flex;
+    flex: 1;
+}
+
+/*Setting the size and color for the border - also each size of the pixels on the grid*/
+.pixel {
+    border: 1px solid black;
+    flex: 1;
+}
+.pixel:hover {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+.controls {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    display: flex;
+    align-self:baseline;
+    padding: 12px 24px;
+    background-color: #4c8bf5;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+}
+
+button:hover {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
