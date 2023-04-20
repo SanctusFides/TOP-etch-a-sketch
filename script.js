@@ -61,7 +61,7 @@ function resetGrid() {
 
 // Obtains new size and redraws the grid
 function resizeGrid() {
-    const newSize;
+    let newSize;
     container.innerHTML = '';
     while (newSize === undefined || newSize === null || newSize < 1 || newSize > 32) {
         newSize = prompt('Select a new size for the grid between 1-32')
